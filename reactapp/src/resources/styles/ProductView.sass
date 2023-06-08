@@ -1,0 +1,34 @@
+@font-face
+  font-family: Stolzl-Light
+  src: url('../../resources/fonts/Stolzl-Light.otf')
+
+
+
+.product-view
+  cursor: pointer
+  display: grid
+  grid-template-rows: calc(407.25px + 30px) repeat(3, 1fr)
+  margin-bottom: 90px
+  width: 330px
+
+  >img.preview-image
+    background-color: #DDC9BA
+    border-radius: 10px
+    height: auto
+    margin-bottom: 30px
+    transition: transform .2s
+    width: 100%
+
+  >.text
+    font-family: Stolzl-Light
+    font-size: 20px
+    margin-bottom: 20px
+    text-align: center
+    transition: color .2s
+
+.product-view:hover
+  >img.preview-image
+    transform: translateY(-20px)
+
+  >.text
+    color: lighten(black, 50%)

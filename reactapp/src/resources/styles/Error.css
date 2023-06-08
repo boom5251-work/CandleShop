@@ -1,0 +1,15 @@
+div.content-container.error {
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+  min-height: 600px;
+  width: 100%;
+}
+div.content-container.error > img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=Error.css.map */

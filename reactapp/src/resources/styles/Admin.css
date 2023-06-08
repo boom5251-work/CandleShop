@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Stolzl-Book;
+  src: url("../fonts/Stolzl-Book.otf");
+}
+.content-container {
+  margin: 50px auto;
+  width: 300px;
+}
+.content-container > h2 {
+  color: #282828;
+  font-family: Stolzl-Book, sans-serif;
+  font-size: 16pt;
+  margin: 0 0 30px 0;
+}
+.content-container > form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.content-container > form > .form-part {
+  margin-bottom: 15px;
+}
+.content-container > form > .form-part > label {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Stolzl-Book, sans-serif;
+  font-size: 12pt;
+  margin-bottom: 5px;
+}
+.content-container > form > .form-part > input {
+  font-size: 11pt;
+}
+.content-container > form > .form-part > input[type=file] {
+  background-color: #185bd3;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: Stolzl-Book, sans-serif;
+  height: 34px;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s;
+  width: 150px;
+}
+.content-container > form > .form-part > input[type=file]:hover {
+  background-color: cornflowerblue;
+}
+.content-container > form > .form-part > input[type=file].hidden {
+  display: none;
+}
+.content-container > form > .form-part > input[type=text] {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: Stolzl-Book, sans-serif;
+  height: 34px;
+  margin: 0;
+  max-width: 400px;
+  outline: none;
+  padding: 5px 8px;
+  width: 100%;
+}
+.content-container > form input[type=button] {
+  background-color: #185bd3;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: Stolzl-Book, sans-serif;
+  height: 34px;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s;
+  width: 150px;
+  font-size: 11pt;
+}
+.content-container > form input[type=button]:hover {
+  background-color: cornflowerblue;
+}
+
+.image-entry-view {
+  display: grid;
+  grid-template-columns: 60px auto 40px;
+  margin-bottom: 10px;
+}
+.image-entry-view > .info-text {
+  font-family: Stolzl-Book, sans-serif;
+  margin-right: 10px;
+  padding: 8px 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.image-entry-view > .info-text > .text {
+  color: gray;
+}
+.image-entry-view > .info-text > .value {
+  color: black;
+}
+.image-entry-view > button.delete-button {
+  background-color: #185bd3;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: Stolzl-Book, sans-serif;
+  height: 34px;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s;
+  width: 34px;
+  background-color: #B02A2A;
+}
+.image-entry-view > button.delete-button:hover {
+  background-color: cornflowerblue;
+}
+.image-entry-view > button.delete-button:hover {
+  background-color: #da6666;
+}
+.image-entry-view > button.delete-button > img {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*# sourceMappingURL=Admin.css.map */

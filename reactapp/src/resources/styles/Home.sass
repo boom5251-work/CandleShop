@@ -1,0 +1,234 @@
+@font-face
+  font-family: Stolzl-Book, sans-serif
+  src: url('../fonts/Stolzl-Book.otf')
+
+@font-face
+  font-family: Stolzl-Light
+  src: url('../fonts/Stolzl-Light.otf')
+
+@font-face
+  font-family: Cormorant-Light
+  src: url('../fonts/Cormorant-Light.ttf')
+
+
+
+$content-width: 1100px
+
+
+
+@mixin header-section-footer()
+  margin: 0
+  min-width: calc($content-width + 40px)
+  padding: 0
+  width: 100%
+
+  >.content-container
+    margin: 0 auto
+    width: $content-width
+
+
+
+header.main-header
+  @include header-section-footer
+  background: linear-gradient(205.64deg, #967661 2.55%, #D3B6A0 83.79%)
+  height: 770px
+
+  >.content-container
+    >h1.title
+      font-family: Cormorant-Light, sans-serif
+      font-size: 70px
+      color: white
+      margin: 0
+      padding: 40px 0
+      text-align: center
+      user-select: none
+
+    >.main-navigation-container
+      display: flex
+      border-bottom: 1px solid white
+      border-top: 1px solid white
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: space-between
+      margin: 0 -50px
+      padding: 0 35px
+
+      >nav.main-navigation
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        position: relative
+        z-index: 1
+
+        >a.link
+          font-family: Stolzl-Book, sans-serif
+          font-size: 20px
+          color: white
+          margin-right: 60px
+          padding: 13px 0
+          text-decoration: none
+          transition: color .2s
+          z-index: 1
+
+        >a.link:hover
+          color: rgba(255, 255, 255, 50%)
+
+      >nav.social-navigation
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        right: calc((100% - $content-width) / 2)
+        z-index: 1
+
+        >a
+          display: block
+          height: 22px
+          margin: auto 0 auto 20px
+
+        .svg-social-icon
+          cursor: pointer
+          height: 22px
+          fill: none
+
+          path, ellipse, mask
+            stroke-width: 1.5
+            stroke: white
+            transition: stroke .2s
+
+        .svg-social-icon:hover
+          path, ellipse, mask
+            stroke: rgba(255, 255, 255, 50%)
+
+    >.candles-main-preview
+      height: 950px
+      position: absolute
+      left: calc((100% - $content-width) / 2 - 100px)
+      top: 40px
+      z-index: 0
+
+
+section.about-section
+  @include header-section-footer
+
+  >.content-container
+    >h2.title
+      font-family: Cormorant-Light, sans-serif
+      font-size: 71px
+      margin: 120px 0 60px 0
+      position: relative
+      text-align: center
+      z-index: 1
+
+    >p.about-text
+      font-family: Stolzl-Light, sans-serif
+      font-size: 20px
+      margin: 0 0 150px 0
+      text-align: center
+      line-height: 1.425
+
+
+section.description-section
+  @include header-section-footer
+  background-color: #EFDED0
+  padding: 150px 0
+  overflow: hidden
+
+  >img.candles-additional-preview
+    left: calc((100% - $content-width) / 2 + 400px)
+    position: relative
+    top: 0
+    z-index: 0
+
+  >.content-container
+    margin-top: -760px
+
+    >img.leaves-2
+      position: absolute
+      right: 0
+      top: 1275px
+      z-index: 0
+
+    >img.leaves-1
+      left: 0
+      position: absolute
+      top: 1280px
+      z-index: 0
+
+    >p.text
+      font-family: Stolzl-Light, sans-serif
+      font-size: 25px
+      line-height: 1.425
+      margin: 0
+      position: relative
+      z-index: 1
+
+    >p.first-text
+      margin: 0 60px 60px 0
+
+    >p.last-text
+      margin-right: 450px
+
+
+section.catalog-section
+  @include header-section-footer
+  background-color: #F8F6F7
+  padding: 200px 0 100px 0
+
+  >.content-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+    >.products-container
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+    >p.products-description
+      font-family: Stolzl-Light, sans-serif
+      font-size: 25px
+      line-height: 1.425
+
+
+
+footer.main-footer
+  @include header-section-footer
+  background: linear-gradient(208.75deg, #967661 -105.77%, #D3B6A0 82.29%)
+  padding: 60px 0
+
+  >.content-container
+    >nav.footer-navigation
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: space-between
+
+      >.navigation-cell
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+
+        >h3.title
+          color: white
+          font-family: Cormorant-Light, sans-serif
+          font-size: 70px
+          margin: 0
+
+        >.head
+          color: white
+          font-size: 32px
+          margin-top: 32px
+
+        >.link
+          color: white
+          font-size: 16px
+          font-family: Stolzl-Light, sans-serif
+          margin: 30px 0 0 0
+          text-decoration: none
+          transition: color .2s
+
+        >.link:hover
+          color: rgba(255, 255, 255, 50%)

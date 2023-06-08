@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CandleShop.DataAccess.DomainModels.Image">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>DomainModels\Image.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.247" />
+  </Class>
+  <Class Name="CandleShop.DataAccess.DomainModels.Product">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <AssociationLine Name="Image" Type="CandleShop.DataAccess.DomainModels.Image">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.245" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAAAAAAAAQAAAAAABEAAAAAAAAAAAA=</HashCode>
+      <FileName>DomainModels\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Image" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="CandleShop.DataAccess.DomainModels.IStoredFileInfo">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>DomainModels\IStoredFileInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

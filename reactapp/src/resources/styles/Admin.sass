@@ -1,0 +1,116 @@
+@font-face
+  font-family: Stolzl-Book
+  src: url('../fonts/Stolzl-Book.otf')
+
+
+
+$text-color: #282828
+
+
+
+@mixin button($width: 150px)
+  background-color: darken(cornflowerblue, 20%)
+  border: none
+  border-radius: 3px
+  color: white
+  cursor: pointer
+  display: block
+  font-family: Stolzl-Book, sans-serif
+  height: 34px
+  outline: none
+  padding: 0
+  transition: background-color .2s
+  width: $width
+
+  &:hover
+    background-color: cornflowerblue
+
+
+@mixin text-input
+  background-color: white
+  border: 1px solid black
+  border-radius: 3px
+  box-sizing: border-box
+  font-family: Stolzl-Book, sans-serif
+  height: 34px
+  margin: 0
+  max-width: 400px
+  outline: none
+  padding: 5px 8px
+  width: 100%
+
+
+
+.content-container
+  margin: 50px auto
+  width: 300px
+
+  >h2
+    color: $text-color
+    font-family: Stolzl-Book, sans-serif
+    font-size: 16pt
+    margin: 0 0 30px 0
+
+  >form
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+
+    >.form-part
+      margin-bottom: 15px
+
+      >label
+        box-sizing: border-box
+        display: inline-block
+        font-family: Stolzl-Book, sans-serif
+        font-size: 12pt
+        margin-bottom: 5px
+
+      >input
+        font-size: 11pt
+
+      >input[type="file"]
+        @include button
+
+      >input[type="file"].hidden
+        display: none
+
+
+      >input[type="text"]
+        @include text-input
+
+    input[type="button"]
+      @include button
+      font-size: 11pt
+
+
+
+.image-entry-view
+  display: grid
+  grid-template-columns: 60px auto 40px
+  margin-bottom: 10px
+
+  >.info-text
+    font-family: Stolzl-Book, sans-serif
+    margin-right: 10px
+    padding: 8px 0
+    overflow-x: hidden
+    white-space: nowrap
+
+    >.text
+      color: gray
+
+    >.value
+      color: black
+
+  >button.delete-button
+    @include button(34px)
+    background-color: #B02A2A
+
+    &:hover
+      background-color: lighten(#B02A2A, 20%)
+
+    >img
+      padding: 5px
+      box-sizing: border-box
+      width: 100%
